@@ -5,7 +5,7 @@ url = "https://api.d-id.com/talks"
 
 headers = {
     "accept": "application/json",
-    "authorization": "Basic Wm1Wa2IzSnZkbTR4T1VCbmJXRnBiQzVqYjIwOjh1NVI4bmRNQ1A1dm9ydjhmUWZJXw==",
+    "authorization": "Basic Wm1Wa2IzSnZkbTR4T1VCbmJXRnBiQzVqYjIwOjFXNm80NW0wQ29CS213WEtLcUIxUg==",
     "content-type": "application/json",
 }
 
@@ -13,11 +13,11 @@ data = {
     "script": {
         "type": "text",
         "provider": {
-            "type": "elevenlabs", "voice_id": "21m00Tcm4TlvDq8ikWAM"
+            "type": "elevenlabs", "voice_id": "EXAVITQu4vr4xnSDxMaL"
             },
-        "input": "Hello, this is a new video"
+        "input": "Понятно. Начнем с первой популярной теории — теории накопления ошибок в ДНК. Вроде бы неплохо звучит, но где доказательства того, что именно мутации являются причиной старения, а не просто следствием других процессов в клетке? Какие есть ключевые исследования, подтверждающие эту связь?"
     },
-    "source_url": "https://i.postimg.cc/TYsYbY6v/Day-1-the-phope-kidduuuu-848-resized-(1).jpg"
+    "source_url": "https://i.postimg.cc/R0hsHj2X/pexels-photo-19248758.jpg"
 }
 
 response = requests.post(url, headers=headers, json=data)

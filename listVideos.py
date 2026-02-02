@@ -5,7 +5,7 @@ url = "https://api.d-id.com/talks"
 
 headers = {
     "accept": "application/json",
-    "authorization": "Basic Wm1Wa2IzSnZkbTR4T1VCbmJXRnBiQzVqYjIwOjh1NVI4bmRNQ1A1dm9ydjhmUWZJXw==",
+    "authorization": "Basic Y0c5emRHRnNabVZrYjNSdmRrQm5iV0ZwYkM1amIyMDpjajR0THg2MHVYYmhjOEtpUVBEVFI=",
 }
 
 response = requests.get(url, headers=headers)
@@ -23,3 +23,6 @@ json_data = json.loads(decoded_data)
 
 fields = len(json_data['talks'])
 print(fields)
+
+data = json_data['talks'][0]['result_url']
+print(data)
