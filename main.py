@@ -143,8 +143,7 @@ def download_video(video_url):
 
     driver.get(video_url)
 
-    wait = WebDriverWait(driver, 10)  
-    element = wait.until(EC.presence_of_element_located((By.ID, "example")))
+    time.sleep(8)
     driver.close()
 
 def get_latest_file():
